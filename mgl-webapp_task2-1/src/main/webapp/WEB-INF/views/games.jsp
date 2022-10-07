@@ -91,7 +91,7 @@
                             <tr ng-repeat="currentGame in ctrl.games">
                                 <td><span ng-bind="currentGame.name"></span></td>
                                 <td><span ng-bind="currentGame.genre"></span></td>
-                                <td></td>
+                                <td><button ng-click="ctrl.deleteGame(currentGame) class ="btn-small"></button>Delete</td>
                                 <td><button data-ng-click="ctrl.selectGame(currentGame)" class="btn btn-secondary btn-sm">Select</button></td>
                                 <td><button data-ng-click="ctrl.deleteGame(currentGame)" class="btn btn-secondary btn-sm">Delete</button></td>
                             </tr>
